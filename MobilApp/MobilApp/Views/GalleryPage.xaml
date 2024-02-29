@@ -16,8 +16,8 @@
                            ImageSource="{Binding PathToPicture}"
                            Text="{Binding NameFile}"
                            Detail="{Binding CreateDate}"
-                           TextColor="DodgerBlue"
-                           DetailColor="Gray">
+                           TextColor="LemonChiffon"
+                           DetailColor="DimGray">
                         </ImageCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

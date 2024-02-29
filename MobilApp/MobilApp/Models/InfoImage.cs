@@ -8,25 +8,25 @@ namespace MobilApp.Models
 {
     public class InfoImage : INotifyPropertyChanged
     {
-        private string _nameFile;
+        private string _file;
         private string _path;
-        private DateTime _createDate;
+        private DateTime _date;
 
-        public InfoImage(string nameFile, string pathToPicture, DateTime createDate)
+        public InfoImage(string file, string path, DateTime date)
         {
-            _nameFile = nameFile;
-            _path = pathToPicture;
-            _createDate = createDate;
+            _file = file;
+            _path = path;
+            _date = date;
         }
 
         public string NameFile
         {
-            get { return _nameFile; }
+            get { return _file; }
             set
             {
-                if (_nameFile != value)
+                if (_file != value)
                 {
-                    _nameFile = value;
+                    _file = value;
                     NotifyPropertyChanged();
                 }
             }
@@ -47,12 +47,12 @@ namespace MobilApp.Models
 
         public DateTime CreateDate
         {
-            get { return _createDate; }
+            get { return _date; }
             set
             {
-                if (_createDate != value)
+                if (_date != value)
                 {
-                    _createDate = value;
+                    _date = value;
                     NotifyPropertyChanged();
                 }
             }
